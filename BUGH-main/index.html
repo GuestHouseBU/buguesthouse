@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>bu guest house</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css">
+
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px "><i class="glyphicon glyphicon-remove"></i></a>
+        <div class="w3-container">
+
+
+            <h3 class="w3-padding-64"><b>Barkatullah<br>Guest House</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i
+                    class="glyphicon glyphicon-user"></i> Home</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+            <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Photo Gallery</a>
+
+            <a href="#Booking" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Booking Procedure</a>
+            <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tarrif</a>
+            <a href="#priority" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Priority </a>
+
+            <a href="#staff" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Staff</a>
+
+            <a href="#tc" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Terms and Conditions</a>
+
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Book</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+            <button class="w3-btn  w3-orange w3-large "><a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScIJVIeGdE9sdEyhwyC061yvXO7u0aMmlogkFSyer-C2sVA4A/viewform?embedded=true">Booking</a><i
+                    class="w3-margin-left  w3-spin fa fa-refresh"></i></button>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+
+        <div class="progress-container">
+            <div class="progress-bar " id="myBar"></div>
+        </div>
+
+
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+        <!-- Header -->
+        <div class="w3-container w3-mobile"" style=" margin-top:80px" id="showcase">
+            <img src="bu.jpg" class="w3-mobile" style="float: right;">
+            <h1 class="w3-jumbo w3-hover-red"><b>UNIVERSITY GUEST HOUSE</b></h1>
+            <h1 class="w3-small w3-xlarge w3-text-red"><b></b></h1>
+            <hr style="width:250px;border:5px solid red" class="w3-round w3-animate-left">
+
+        </div>
+
+
+
+        <button id="myBtn" class="w3-xlarge w3-button w3-block w3-black w3-hover-red w3-margin-bottom"><i
+                class="material-icons">cloud</i> BOOK YOUR
+            ROOM</button>
+
+        <!--<script src="https://sheetdb.io/s/t/4usftgtjhmod2.js"></script>-->
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>please fill the form to book your room</p>
+                <form method="post" autocomplete="off" name="google-sheet">
+
+
+                    <div class="loader">
+                        <div class="loading">
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <input type="text" name="Name" class="form-control" placeholder="Your Name *" value=""
+                            required="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="Email" class="form-control" placeholder="Your Email *" value=""
+                            required="" />
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <input type="text" name="Designation" class="form-control" placeholder="Designation/post/ *"
+                            value="" required="" />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *"
+                            value="" required="" />
+                    </div>
+
+                    <div class="form-group">
+
+                        <select name="purpose" class="form-control" placeholder="purpose">
+                            <option value="Official Visit">Official Visit</option>
+                            <option value="Personal visit">Personal visit</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <input type="datetime-local" name="Date" class="form-control" placeholder="checkin date *"
+                            value="" required="" />
+
+                    </div>
+
+                    <i class="w3-margin-right w3-xlarge  w3-spin fa fa-refresh"></i>
+                    
+
+
+                    <div onsubmit="return checkForm(this);">
+                        <p><input type="checkbox" required="" name="terms" > I accept the<a href="spinner.html"><u>Terms and Conditions</u></a> </p>
+                        
+                    </div>
+
+
+
+
+
+
+                    
+                    <div class="form-group">
+                        <input type="submit" onclick="spinner()" name="submit" class="btnSubmit btn-block"
+                            value="Book Room" />
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Photo grid (modal) -->
+        <div class="w3-row-padding">
+            <div class="w3-half w3-animate-right">
+                <img src="hous.jpeg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+                <img src="bu (1).jpeg" style="width:100%" onclick="onClick(this)"
+                    alt="Light, white and tight scandinavian design">
+
+                <img src="bu (2).jpeg" style="width:100%" onclick="onClick(this)"
+                    alt="White walls with designer chairs">
+
+
+
+            </div>
+
+            <div class="w3-half w3-animate-zoom">
+                <img src="bu (3).jpeg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+                <img src="bu (4).jpeg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+                <img src="bu (5).jpeg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+
+
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-animate-zoom w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image w3-animate-zoom">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="w3-container" id="about" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red w3-animate-right"><b>About</b></h1>
+            <hr style="width:50px;border:5px solid red w3-animate-zoom" class="w3-round">
+            <p>
+                The university has a guest house located on Gate number-2 of our Campus. The accommodation is mainly
+                meant for the guests of the University either invited or attending the programmes at the University
+                campus.
+            </p>
+        </div>
+
+
+
+        <div class="w3-row-padding">
+            <div class="w3-half  w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class=" w3-blue w3-xlarge w3-padding-32"><i class="glyphicon glyphicon-user"></i>ROOM FEATURS
+                    </li>
+                    <li class="w3-padding-16 w3-hover-black "><i class="FaAngleDoubleRight"></i>Free High-speed WI-FI
+                        Internet</li>
+                    <li class="w3-padding-16 w3-hover-red ">Spacious room</li>
+                    <li class="w3-padding-16 w3-hover-blue ">Attached Washroom</li>
+                    <li class="w3-padding-16 w3-hover-gray ">Hot Water</li>
+                    <li class="w3-padding-16 w3-hover-orange ">Clean Room</li>
+                    <li class="w3-padding-16 w3-hover-black">17 AC Room with DTH Attached</li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="w3-half">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-green w3-xlarge w3-padding-32">GUEST HOUSE FACILITIES</li>
+                    <li class="w3-padding-16  w3-hover-black     ">Express check-In & check-Out</li>
+                    <li class="w3-padding-16  w3-hover-red     ">24- Hours front Help Desk</li>
+                    <li class="w3-padding-16  w3-hover-blue     ">Waiting Lobby</li>
+                    <li class="w3-padding-16  w3-hover-gray   ">Dinning </li>
+                    <li class="w3-padding-16  w3-hover-orange    ">Committee Room</li>
+                    <li class="w3-padding-16  w3-hover-black   ">Committed staff available 24*7</li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <!-- Designers -->
+        <div class="w3-container" id="Booking" style="margin-top:75px">
+            <h1 class="w3-xlarge w3-text-red w3-animate-left"><b>Booking Procedure</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>
+
+                All reservations are made through the registrar's office, the Guest House office, the website, and the
+                app.
+                Teachers from other universities and state university officers who come to Bhopal on official business
+                and are sponsored by their respective institutions may be accommodated if they write for room
+                reservations.
+                The maximum amount of time you can stay is three days. Before occupying the room, guests must make
+                entries in the register with the guest housekeeper.
+
+
+
+            </p>
+            <p><b>** If the University requires the rooms for its own use, such provisional bookings may be cancelled
+                    without explanation.</b></p>
+
+        </div>
+
+
+        <div class="w3-container" id="check-In" style="margin-top:75px">
+            <h1 class="w3-xlarge w3-text-red w3-animate-zoom"><b>check-In/check-Out process</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+
+            <p>
+
+
+                Check-in anytime and check-out <b>24 hours</b> from the time of Arrival. However ,for the purpose of
+                accounting a day means 24 house from the time of arrival. <b>Fraction of day will be count as full
+                    day.</b><br>Ordinary person will be allowed to stay for maximum 5 days only .In exceptional cases
+                the extension may be granted subject to the prior approval of the vice -chancellor depending upon the
+                availability of rooms
+
+
+
+            </p><br>
+
+            <p>In each room, there is an inventory of things for usage in the rooms provided by the guests. Guests are
+                asked to check their belongings before entering the room. The guest is responsible for the proper use
+                and repair of the supplies provided in both the rooms and the guest home. They will be held accountable
+                for any losses or damages incurred during their stay.
+
+            </p>
+        </div>
+
+
+
+        <div class="w3-container" id="priority" style="margin-top:75px">
+            <h1 class="w3-xlarge w3-text-red w3-animate-zoom"><b>priority</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p></p>
+            <p><b>
+                    *The following priority list for assignment of rooms in the University Guest House has been
+                    approved:
+
+                </b></p>
+            </p>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <h3>First priority</h3>
+                        <p>Guest who are coming to attend Selection Committee/ EC/ Court/ AC/ FC/viva- voice/ Board of
+                            studies.</p>
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <h3>Second priority</h3>
+                        <p>Vice chancellor /Registrar Visitor’s and Visiting Team from UGC /Higher education Department
+                            .</p>
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <h3>Third Priority</h3>
+                        <p>faculty member of different University Newly appointed faculty member / state university
+                            official guests.</p>
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <h3>Fourth Priority</h3>
+                        <p>Higher education Department officers, Personal Guest of Bu community Visiting faculty/
+                            Visiting Scholars/ Students and seminar participants.</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- The Team -->
+        <div class="row"></div>
+
+
+
+
+
+
+        <!-- Packages / Pricing Tables -->
+        <div class="w3-container" id="packages" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Tarrif</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+
+            <h1>ROOM CHARGES </h1>
+        </div>
+
+        <div class="w3-row-padding ">
+            <div class="w3-half  w3-margin-bottom">
+
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-red w3-xxlarge w3-padding-16 w3-hover-blue"><i class="fas fa-user-check"></i>AC</li>
+                    <li class="w3-padding-16 w3-hover-green">Personal Visit</li>
+
+                    <li class="w3-padding-16 w3-hover-green">
+                        <h2> 400</h2>
+                        <span class="w3-opacity ">per room</span>
+                    </li>
+
+                    <li class="w3-padding-16 w3-hover-gray">Official Visit</li>
+
+                    <li class="w3-padding-16 w3-hover-gray">
+                        <h2> 200</h2>
+                        <span class="w3-opacity">per room</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+
+
+                        <a href="#bo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i
+                                class="fa-solid fa-house-user"></i>BOOK</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <button class=" accordion w3-xxlarge w3-button w3-block w3-black w3-hover-red w3-margin-bottom"><i
+                class="w3-margin-left w3-xlarge w3-spin fa fa-refresh"></i> BOOK YOUR ROOM<i
+                class="w3-margin-left w3-xlarge w3-spin fa fa-refresh"></i></button>
+
+
+
+        <div class="panel">
+            <p>Guests who are Comming to
+
+                attend selection Committee / EC/ Count/ AC/FC/ Viva - Voice / Board of Studies.
+
+                <iframe class="w3-container w3-padding  w3-mobile"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScIJVIeGdE9sdEyhwyC061yvXO7u0aMmlogkFSyer-C2sVA4A/viewform?embedded=true"
+                    width="650" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+            </p>
+        </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 id="staff">our staff to help you</h1>
+        <div class="staff" id="Contact" style="box-sizing: border-box;">
+            <!-- The Team -->
+
+
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <h3>DR. Puneet Shukla </h3>
+                        <p>(officer-incharge)</p>
+                        <p>7649884660</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <h3>Mr.Raghvendra Sharma</h3>
+                        <p> (Care Taker)</p>
+                        <p>9425358405</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <h3>Mr.Dinesh lal karn</h3>
+                        <p>(Office Assistant)</p>
+                        <p>9479376405</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card" style="text-align: left; ">
+                        <p>Mr.suresh(cook)
+
+                        </p>
+                        <p> Mr.Shyam Sundar(Room Bearer)
+                        </p>
+                        <p> Mr.Deendayal saket(Room Bearer)
+                        </p>
+                        <p>Mr.Gulab Lahat(Room Bearer)</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <button class=" accordion w3-xxlarge w3-button w3-block w3-black w3-hover-red w3-margin-bottom" id="tc"><i
+                class="w3-margin-left w3-xlarge w3-spin fa fa-refresh"></i>Terms and Condition<i
+                class="w3-margin-left w3-xlarge w3-spin fa fa-refresh"></i></button>
+
+
+
+        <div class="panel">
+
+
+            <ol class=" w3-large w3-text-white">
+
+                <p>
+                <h1>TERMS AND CONDITIONS</h1>
+                • Persons staying in the guest house are not entitled to bring in unauthorized guest(s) to stay with
+                them in the Guest House<br>
+                • The Guest House closes at 10 PM in winter and 11 PM in summer. Those staying out for the night or
+                coming late should inform the Guest-House-Keeper/Security Guard in advance to avoid any
+                inconvenience. <br>
+                • The University authorities are not responsible for valuable items kept in the rooms<br>
+                • Male visitors/guests are not allowed in the rooms occupied by female guests and vice-versa.<br>
+                • Alcoholic drinks in the Guest House are strictly prohibited. <br>
+                • Any damage or loss to the Guest Houses will be subject to a fine which would be paid by the
+                Requisitioner. <br>
+                • The tariff is subject to change at any time without notice.<br>
+                • Visitor for guests residing in Guest House is allowed from 10.00 a.m. to 10.00 p.m. only.<br>
+                • Pets are not allowed.<br>
+                • Damaging of property or defacing any notice/poster/walls etc. of the Guest Houses is illegal.<br>
+                • We do not accept credit/debit cards. Payment is accepted only in cash.<br>
+                • All visitors coming to see a guest staying in the guest house shall have to make entries in the
+                register available with the security guard.<br>
+                • Cooking/Washing is not allowed in the rooms.<br>
+                • Food/meals, except tea/coffee/cold drinks, are served only in the dinning hall.<br>
+                • The guests are requested to switch off the lights and fans, close windows and lock their rooms
+                when they go out.<br>
+                • Please do not pay tips to the staff. <br>
+                • The Guest House is meant for you. Please help us keep clean
+                • There is always room for improvement suggestions/complaints. If any, kindly put in the suggestion
+                box outside the office.<br>
+
+
+                </p>
+            </ol>
+        </div>
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="w3-padding-32 w3-black w3-center w3-margin-top" id="contact">
+            <h4>Phone Number:0755 2517210</h4>
+            <email>Email I’d-Guesthousebu@gmail.com</email><br>
+            <a href="www.bubhopal.ac.in">Website-www.bubhopal.ac.in</a>
+
+            <h5>Find Us On</h5>
+            <div class="w3-xlarge w3-padding-16">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+            <p style="color: blanchedalmond; font-size: 2rem;">Powered by <a href="arjunsharma1228@gmail.com"
+                    target="_blank" class="w3-hover-text-green">BU BHOPAL</a>
+            </p>
+        </footer>
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+
+
+
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                document.getElementById("modal02").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+
+
+            //loader//
+
+
+
+            function spinner() {
+                document.getElementsByClassName("loader")[0].style.display = "block";
+            }
+
+
+            //terms and con//
+
+            function checkForm(form) {
+                if (!form.terms.checked) {
+                    alert("Please indicate that you accept the Terms and Conditions");
+                    form.terms.focus();
+                    return false;
+                }
+                return true;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            window.onscroll = function () { myFunction() };
+
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+
+
+
+
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwYTyAnbdwIsK9kqTGvH-f7tkJxc4rzjVfbxSbNl5B3H8wH_uv6fHB_yBRs1UcjMIuj/exec'
+            const form = document.forms['google-sheet']
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                    .then(onClick => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                    .catch(error => console.error('Error!', error.message))
+            })
+
+
+
+
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            var modal02 = document.getElementById("myModal2");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+
+                < script >
+                function myFunction() {
+                    var iframe = document.getElementById("myFrame");
+                    var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
+                    elmnt.style.display = "none";
+                }
+
+
+        </script>
+
+</body>
+
+</html>
